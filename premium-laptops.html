@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Premium Laptops – DealHunt India</title>
+  <meta name="description" content="Explore premium laptops above ₹1,00,000. Compare Apple MacBooks, ASUS ROG, Dell XPS, Lenovo Legion, and more high-end models with filters.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <style>
+    .filter-btn.active { background-color: #0d6efd; color: white; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">DealHunt India</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="premium-laptops.html">Premium</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="py-5 text-white text-center" style="background: url('assets/images/premium-header.jpg') no-repeat center center/cover; height: 300px;">
+  <div class="container">
+    <h1 class="fw-bold">💎 Premium Laptops Over ₹1,00,000</h1>
+    <p>High-performance laptops for professionals, creators, and gamers.</p>
+  </div>
+</header>
+
+<!-- Filters -->
+<section class="py-3 bg-light text-center">
+  <div class="container">
+    <div class="row g-2 justify-content-center">
+      <div class="col-auto">
+        <select id="brandFilter" class="form-select">
+          <option value="">All Brands</option>
+          <option>Apple</option>
+          <option>ASUS</option>
+          <option>HP</option>
+          <option>Dell</option>
+          <option>Lenovo</option>
+          <option>Microsoft</option>
+        </select>
+      </div>
+      <div class="col-auto">
+        <select id="ramFilter" class="form-select">
+          <option value="">All RAM</option>
+          <option>16GB</option>
+          <option>32GB</option>
+        </select>
+      </div>
+      <div class="col-auto">
+        <select id="storageFilter" class="form-select">
+          <option value="">All Storage</option>
+          <option>512GB SSD</option>
+          <option>1TB SSD</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Premium Laptop Cards -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-4" id="laptopGrid">
+
+      <!-- Example Card: Apple MacBook Pro M3 -->
+      <div class="col-md-4 laptop-card" data-brand="Apple" data-ram="16GB" data-storage="512GB SSD">
+        <div class="card shadow-sm h-100">
+          <img src="assets/images/macbook-pro-m3.jpg" class="card-img-top" alt="MacBook Pro M3">
+          <div class="card-body">
+            <h5 class="card-title">MacBook Pro M3 (14")</h5>
+            <p class="card-text">Apple M3 Chip, 16GB RAM, 512GB SSD – Creative powerhouse.</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ASUS ZenBook Pro -->
+      <div class="col-md-4 laptop-card" data-brand="ASUS" data-ram="32GB" data-storage="1TB SSD">
+        <div class="card shadow-sm h-100">
+          <img src="assets/images/asus-zenbook.jpg" class="card-img-top" alt="ASUS ZenBook Pro">
+          <div class="card-body">
+            <h5 class="card-title">ASUS ZenBook Pro OLED</h5>
+            <p>i9, RTX 4060, 32GB RAM, 1TB SSD – Brilliant OLED performance.</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add 10 more premium cards with realistic details -->
+      <!-- ... (I will provide all 12 in the next message) -->
+       <!-- HP Spectre x360 -->
+<div class="col-md-4 laptop-card" data-brand="HP" data-ram="16GB" data-storage="1TB SSD">
+  <div class="card shadow-sm h-100">
+    <img src="assets/images/hp-spectre.jpg" class="card-img-top" alt="HP Spectre x360">
+    <div class="card-body">
+      <h5 class="card-title">HP Spectre x360</h5>
+      <p>13th Gen i7, 16GB RAM, 1TB SSD – 2-in-1 design for creators.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</div>
+
+<!-- Dell XPS 15 -->
+<div class="col-md-4 laptop-card" data-brand="Dell" data-ram="32GB" data-storage="1TB SSD">
+  <div class="card shadow-sm h-100">
+    <img src="assets/images/dell-xps15.jpg" class="card-img-top" alt="Dell XPS 15">
+    <div class="card-body">
+      <h5 class="card-title">Dell XPS 15</h5>
+      <p>i9, 32GB RAM, 1TB SSD – Premium display & performance.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</div>
+
+<!-- Lenovo Legion Pro 7i -->
+<div class="col-md-4 laptop-card" data-brand="Lenovo" data-ram="32GB" data-storage="1TB SSD">
+  <div class="card shadow-sm h-100">
+    <img src="assets/images/legion-pro.jpg" class="card-img-top" alt="Lenovo Legion Pro 7i">
+    <div class="card-body">
+      <h5 class="card-title">Lenovo Legion Pro 7i</h5>
+      <p>i9, RTX 4080, 32GB RAM – Extreme gaming & creation laptop.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</div>
+
+<!-- Microsoft Surface Laptop 7 -->
+<div class="col-md-4 laptop-card" data-brand="Microsoft" data-ram="16GB" data-storage="512GB SSD">
+  <div class="card shadow-sm h-100">
+    <img src="assets/images/surface-laptop.jpg" class="card-img-top" alt="Surface Laptop">
+    <div class="card-body">
+      <h5 class="card-title">Microsoft Surface Laptop 7</h5>
+      <p>Snapdragon X Plus, 16GB RAM – AI-ready Copilot+ laptop.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</div>
+
+<!-- Apple MacBook Pro M3 Max -->
+<div class="col-md-4 laptop-card" data-brand="Apple" data-ram="32GB" data-storage="1TB SSD">
+  <div class="card shadow-sm h-100">
+    <img src="assets/images/macbook-pro-m3-max.jpg" class="card-img-top" alt="MacBook Pro M3 Max">
+    <div class="card-body">
+      <h5 class="card-title">MacBook Pro M3 Max</h5>
+      <p>32GB RAM, 1TB SSD – Ultra performance for developers & creators.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</div>
+
+<!-- ASUS ROG Zephyrus G16 -->
+<div class="col-md-4 laptop-card" data-brand="ASUS" data-ram="16GB" data-storage="1TB SSD">
+  <div class="card shadow-sm h-100">
+    <img src="assets/images/asus-zephyrus.jpg" class="card-img-top" alt="ASUS ROG Zephyrus G16">
+    <div class="card-body">
+      <h5 class="card-title">ASUS ROG Zephyrus G16</h5>
+      <p>i7 13th Gen, RTX 4070, 16GB RAM – Elegant gaming laptop.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</div>
+
+<!-- HP Envy 16 Creator Edition -->
+<div class="col-md-4 laptop-card" data-brand="HP" data-ram="32GB" data-storage="1TB SSD">
+  <div class="card shadow-sm h-100">
+    <img src="assets/images/hp-envy.jpg" class="card-img-top" alt="HP Envy 16 Creator">
+    <div class="card-body">
+      <h5 class="card-title">HP Envy 16 Creator</h5>
+      <p>i9, RTX 4060, 32GB RAM – Built for AI, editing, and creation.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</div>
+
+<!-- Dell Alienware x14 R2 -->
+<div class="col-md-4 laptop-card" data-brand="Dell" data-ram="16GB" data-storage="1TB SSD">
+  <div class="card shadow-sm h-100">
+    <img src="assets/images/alienware-x14.jpg" class="card-img-top" alt="Alienware x14">
+    <div class="card-body">
+      <h5 class="card-title">Alienware x14 R2</h5>
+      <p>i9, RTX 4060, 16GB RAM – Thin, portable, ultra-powerful gaming.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</div>
+
+<!-- Lenovo Yoga 9i Gen 8 -->
+<div class="col-md-4 laptop-card" data-brand="Lenovo" data-ram="16GB" data-storage="512GB SSD">
+  <div class="card shadow-sm h-100">
+    <img src="assets/images/yoga-9i.jpg" class="card-img-top" alt="Lenovo Yoga 9i">
+    <div class="card-body">
+      <h5 class="card-title">Lenovo Yoga 9i Gen 8</h5>
+      <p>i7 13th Gen, 16GB RAM – 2-in-1 premium convertible.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</div>
+
+<!-- Microsoft Surface Studio Laptop -->
+<div class="col-md-4 laptop-card" data-brand="Microsoft" data-ram="32GB" data-storage="1TB SSD">
+  <div class="card shadow-sm h-100">
+    <img src="assets/images/surface-studio.jpg" class="card-img-top" alt="Surface Studio Laptop">
+    <div class="card-body">
+      <h5 class="card-title">Surface Laptop Studio 2</h5>
+      <p>i7, RTX 4050, 32GB RAM – Creative workstation with stylus support.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-1">© 2025 DealHunt India</p>
+  <a href="privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
+</footer>
+
+<!-- Scripts -->
+<script>
+  const laptops = document.querySelectorAll('.laptop-card');
+  const brand = document.getElementById('brandFilter');
+  const ram = document.getElementById('ramFilter');
+  const storage = document.getElementById('storageFilter');
+
+  function filterLaptops() {
+    laptops.forEach(card => {
+      const matchBrand = !brand.value || card.dataset.brand === brand.value;
+      const matchRam = !ram.value || card.dataset.ram === ram.value;
+      const matchStorage = !storage.value || card.dataset.storage === storage.value;
+      card.style.display = matchBrand && matchRam && matchStorage ? 'block' : 'none';
+    });
+  }
+
+  brand.addEventListener('change', filterLaptops);
+  ram.addEventListener('change', filterLaptops);
+  storage.addEventListener('change', filterLaptops);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

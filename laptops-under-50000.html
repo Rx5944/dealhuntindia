@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Best Laptops Under ₹50,000 – DealHunt India</title>
+  <meta name="description" content="Top laptops under ₹50,000 for students, work, and daily use. Budget-friendly models with latest specs and best value.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">DealHunt India</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="student-laptops.html">Student</a></li>
+        <li class="nav-item"><a class="nav-link" href="gaming-laptops.html">Gaming</a></li>
+        <li class="nav-item"><a class="nav-link active" href="laptops-under-50000.html">Under ₹50K</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="py-5 text-white text-center" style="background: url('assets/images/budget-header.jpg') no-repeat center center/cover; height: 300px;">
+  <div class="container">
+    <h1 class="fw-bold">💰 Laptops Under ₹50,000</h1>
+    <p>Top value picks for study, work, and everyday use on a budget.</p>
+  </div>
+</header>
+
+<!-- Filters Section -->
+<section class="bg-primary py-4">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <label class="form-label">Brand</label>
+        <select id="brandFilter" class="form-select">
+          <option value="">All Brands</option>
+          <option value="acer">Acer</option>
+          <option value="hp">HP</option>
+          <option value="infinix">Infinix</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">RAM</label>
+        <select id="ramFilter" class="form-select">
+          <option value="">All RAM</option>
+          <option value="8gb">8GB</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Storage</label>
+        <select id="storageFilter" class="form-select">
+          <option value="">All Storage</option>
+          <option value="256gb">256GB SSD</option>
+          <option value="512gb">512GB SSD</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Sort by Price</label>
+        <select id="sortFilter" class="form-select">
+          <option value="">Default</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Laptop Cards -->
+<section class="py-5 bg-dark">
+  <div class="container">
+    <div class="row g-4" id="laptopCards">
+      <!-- Acer - 8GB - 512GB -->
+      <div class="col-md-4 laptop-card" data-brand="asus" data-ram="16gb" data-storage="512gb" data-price="56990">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/asustufgaminga15.jpg" class="card-img-top" alt="Acer Extensa 15">
+          <div class="card-body">
+            <h5 class="card-title">ASUS TUF Gaming A15</h5>
+            <p>ASUS TUF Gaming A15, 15.6" (39.62cm) FHD 16:9 144Hz, AMD Ryzen 7 7435HS, Gaming Laptop (16 DDR5/512GB SSD/NVIDIA GeForce RTX 2050/Windows 11 Home/Graphite Black/2.30 Kg), FA506NFR-HN045W</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Check Price</a>
+            <a href="#" class="btn btn-primary w-100 mt-2" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HP - 8GB - 512GB -->
+      <div class="col-md-4 laptop-card" data-brand="hp" data-ram="8gb" data-storage="512gb" data-price="43990">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/LenovoThinkbook16.jpg" class="card-img-top" alt="HP 15s i3">
+          <div class="card-body">
+            <h5 class="card-title">Lenovo Thinkbook 16</h5>
+            <p>Lenovo Thinkbook 16 AMD Ryzen 7 16" WUXGA IPS Antiglare 300 NITS Thin and Light Laptop (16GB Ram/512GB SSD/Windows 11 Home/Fpr/Office 2021/Arctic Grey/1 Year Onsite/1.7 Kg), 21KKA0G1IN</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Check Price</a>
+            <a href="#" class="btn btn-primary w-100 mt-2" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infinix - 8GB - 256GB -->
+      <div class="col-md-4 laptop-card" data-brand="infinix" data-ram="8gb" data-storage="256gb" data-price="31999">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/LenovoIdeaPadSlim350.jpg" class="card-img-top" alt="Infinix INBook X2">
+          <div class="card-body">
+            <h5 class="card-title">Lenovo IdeaPad Slim 3 Ryzen 7</h5>
+            <p>Lenovo IdeaPad Slim 3 Ryzen 7 5825U 15.6" (39.6cm) FHD Thin and Light Laptop (16GB RAM/512GB SSD/Integrated AMD Radeon Graphics/Windows 11/Office Home 2024/Grey/1.6Kg), 82XM00MVIN</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Check Price</a>
+            <a href="#" class="btn btn-primary w-100 mt-2" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Acer - 8GB - 256GB -->
+      <div class="col-md-4 laptop-card" data-brand="acer" data-ram="8gb" data-storage="256gb" data-price="34990">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/SamsungGalaxyBook4.jpg" class="card-img-top" alt="Acer One 14">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy Book4</h5>
+            <p>Samsung Galaxy Book4 (Gray, 16GB RAM, 512GB SSD) | 15.6" Full HD Screen | Intel Core i5 1335U Processor | Windows 11 Home | MS Office 2021 | Fingerprint Reader | Intel Iris XE Graphics | RJ45 LAN Port</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Check Price</a>
+            <a href="#" class="btn btn-primary w-100 mt-2" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HP - 8GB - 256GB -->
+      <div class="col-md-4 laptop-card" data-brand="hp" data-ram="8gb" data-storage="256gb" data-price="39990">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/hp15.jpg" class="card-img-top" alt="HP 14s">
+          <div class="card-body">
+            <h5 class="card-title">HP 15</h5>
+            <p>HP 15, 13th Gen Intel Core i5-1334U Laptop(16GB DDR4, 512GB SSD), 15.6"/39.6cm,FHD,Win 11,Office 24,Microsoft 365*, Silver,1.59kg, Iris Xe Graphics, FHD Camera w/Privacy Shutter, Backlit KB, fd0467tu
+ – Best for students and work.</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Check Price</a>
+            <a href="#" class="btn btn-primary w-100 mt-2" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infinix - 8GB - 512GB -->
+      <div class="col-md-4 laptop-card" data-brand="infinix" data-ram="8gb" data-storage="512gb" data-price="37999">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/ASUSVivibook15.jpg" class="card-img-top" alt="Infinix INBook X1">
+          <div class="card-body">
+            <h5 class="card-title">ASUS Vivibook 15</h5>
+            <p>ASUS Vivobook 15,13th Gen,Intel Core i5-13420H(Intel UHD iGPU/16GB RAM/512GB SSD/FHD/15.6"/60Hz/Backlit Keyboard/Windows 11/M365 Basic (1Year)*/Office Home 2024/Quiet Blue/1.70 kg) X1502VA-BQ836WS</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Check Price</a>
+            <a href="#" class="btn btn-primary w-100 mt-2" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Acer - 8GB - 512GB -->
+      <div class="col-md-4 laptop-card" data-brand="acer" data-ram="8gb" data-storage="512gb" data-price="46990">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/aceraspirelite50.jpg" class="card-img-top" alt="Acer Aspire 3">
+          <div class="card-body">
+            <h5 class="card-title">Acer Aspire Lite</h5>
+            <p>Acer[SmartChoice Aspire Lite 12thGen Intel Core i5-12450H Premium Laptop(Win11Home/16GB RAM/1TB SSD/IntelUHD Graphics/MSO) AL15-52H, 39.62cm(15.6") FHD IPS Display,Backlit Keyboard,Pure Silver, 1.7KG – Best multitasking laptop under ₹50K.</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Check Price</a>
+            <a href="#" class="btn btn-primary w-100 mt-2" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HP - 8GB - 512GB -->
+      <div class="col-md-4 laptop-card" data-brand="hp" data-ram="8gb" data-storage="512gb" data-price="49990">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/HPVictusGamingLaptop15.jpg" class="card-img-top" alt="HP Victus Lite">
+          <div class="card-body">
+            <h5 class="card-title">HP Victus Gaming Laptop 15</h5>
+            <p>HP Victus Gaming Laptop 15,AMD Ryzen 5 5600H,15.6 inch(39.6cm),FHD,Anti-Glare,8 GB DDR4-3200 MHz RAM, 512 GB PCIe® Gen4NVMe™ TLC M.2 SSD,Windows 11 Home,2.29kg, fb0153AX – Entry-level performance gaming.</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Check Price</a>
+            <a href="#" class="btn btn-primary w-100 mt-2" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infinix - 8GB - 256GB -->
+      <div class="col-md-4 laptop-card" data-brand="infinix" data-ram="8gb" data-storage="256gb" data-price="29990">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/DellInspiron3530.jpg" class="card-img-top" alt="InBook X1 Slim">
+          <div class="card-body">
+            <h5 class="card-title">Dell Inspiron 3530</h5>
+            <p>Dell Inspiron 3530 Laptop, 13th Gen Intel Core i5-1334U Processor, 16GB, 512GB SSD, 15.6"(39.62cm) FHD 120Hz 250 nits, Backlit KB, Windows 11 + MSO'24 & 15 Month McAfee, Silver, Thin & Light- 1.62kg</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Check Price</a>
+            <a href="#" class="btn btn-primary w-100 mt-2" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+
+      
+
+    </div>
+  </div>
+</section>
+<div class="container text-center my-4">
+  <style>
+  .custom-btn {
+    background-color: #f4c10f; /* DealHunt-style gold */
+    color: #000;
+    border: none;
+    padding: 30px 70px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: large;
+
+    
+  }
+
+  .custom-btn:hover {
+    background-color: #d4a40e;
+  }
+</style>
+
+<a href="#" target="_blank" class="custom-btn rounded mb-4">
+  See More
+</a>
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-1">© 2025 DealHunt India</p>
+  <a href="privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const brandFilter = document.getElementById('brandFilter');
+  const ramFilter = document.getElementById('ramFilter');
+  const storageFilter = document.getElementById('storageFilter');
+  const sortFilter = document.getElementById('sortFilter');
+  const cards = document.querySelectorAll('.laptop-card');
+  const cardsContainer = document.getElementById('laptopCards');
+
+  function filterLaptops() {
+    let filtered = Array.from(cards);
+    const brand = brandFilter.value;
+    const ram = ramFilter.value;
+    const storage = storageFilter.value;
+    const sort = sortFilter.value;
+
+    filtered = filtered.filter(card => {
+      return (
+        (brand === '' || card.dataset.brand === brand) &&
+        (ram === '' || card.dataset.ram === ram) &&
+        (storage === '' || card.dataset.storage === storage)
+      );
+    });
+
+    if (sort === 'low') {
+      filtered.sort((a, b) => +a.dataset.price - +b.dataset.price);
+    } else if (sort === 'high') {
+      filtered.sort((a, b) => +b.dataset.price - +a.dataset.price);
+    }
+
+    cardsContainer.innerHTML = '';
+    filtered.forEach(card => cardsContainer.appendChild(card));
+  }
+
+  brandFilter.addEventListener('change', filterLaptops);
+  ramFilter.addEventListener('change', filterLaptops);
+  storageFilter.addEventListener('change', filterLaptops);
+  sortFilter.addEventListener('change', filterLaptops);
+  filterLaptops();
+</script>
+</body>
+</html>

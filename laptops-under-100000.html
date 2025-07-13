@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laptops Under ₹1,00,000 – DealHunt India</title>
+  <meta name="description" content="Premium laptops under ₹1,00,000 for professionals, creators, and gamers. Filter by brand, RAM, storage & sort by price.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <style>
+    .filter-group { margin-bottom: 1rem; }
+    .laptop-card { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">DealHunt India</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="laptops-under-50000.html">Under ₹50K</a></li>
+        <li class="nav-item"><a class="nav-link" href="laptops-under-60000.html">Under ₹60K</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Under ₹100K</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="py-5 text-white text-center" style="background: url('assets/images/premium-header.jpg') no-repeat center center/cover; height: 300px;">
+  <div class="container">
+    <h1 class="fw-bold">🚀 Laptops Under ₹1,00,000</h1>
+    <p>Power-packed laptops with premium features. Filter by RAM, brand, storage and sort prices.</p>
+  </div>
+</header>
+
+<!-- Filters -->
+<section class="py-4 bg-light">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 filter-group">
+        <label>Brand</label>
+        <select class="form-select" id="brandFilter">
+          <option value="all">All</option>
+          <option value="HP">HP</option>
+          <option value="Apple">Apple</option>
+          <option value="ASUS">ASUS</option>
+        </select>
+      </div>
+      <div class="col-md-3 filter-group">
+        <label>RAM</label>
+        <select class="form-select" id="ramFilter">
+          <option value="all">All</option>
+          <option value="8GB">8GB</option>
+          <option value="16GB">16GB</option>
+        </select>
+      </div>
+      <div class="col-md-3 filter-group">
+        <label>Storage</label>
+        <select class="form-select" id="storageFilter">
+          <option value="all">All</option>
+          <option value="512GB">512GB</option>
+          <option value="1TB">1TB</option>
+        </select>
+      </div>
+      <div class="col-md-3 filter-group">
+        <label>Sort by Price</label>
+        <select class="form-select" id="sortPrice">
+          <option value="default">Default</option>
+          <option value="asc">Low to High</option>
+          <option value="desc">High to Low</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Laptop Cards -->
+<section class="py-4 bg-white">
+  <div class="container">
+    <div class="row g-4" id="laptopList">
+      <!-- 9 Laptop Cards -->
+      <div class="col-md-4 laptop-card" data-brand="HP" data-ram="8GB" data-storage="512GB" data-price="71990">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/hp-victus.jpg" class="card-img-top" alt="HP Victus">
+          <div class="card-body">
+            <h5 class="card-title">HP Victus</h5>
+            <p>HP Victus, 13th Gen Intel Core i5-13420H, 6 GB RTX 3050 Gaming Laptop, (Upgradable 16GB DDR4, 512GB SSD) 144Hz,300 nits, IPS, 15.6inch(39.6cm) FHD, Win 11, M365* Office24, Mica Silver,2.3kg, fa2700TX – Sleek gaming performance. – Gaming & work blend.</p>
+            <p class="text-muted">₹71,990</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Check Price</a>
+            <a href="#" class="btn btn-primary w-100 mt-2" target="_blank">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 laptop-card" data-brand="HP" data-ram="16GB" data-storage="1TB" data-price="89990">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/hp-spectre.jpg" class="card-img-top" alt="HP Spectre">
+          <div class="card-body">
+            <h5 class="card-title">HP Spectre x360</h5>
+            <p>i7 13th Gen, 16GB RAM, 1TB SSD – Touchscreen 2-in-1.</p>
+            <p class="text-muted">₹89,990</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 laptop-card" data-brand="Apple" data-ram="8GB" data-storage="512GB" data-price="93900">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/macbook-air.jpg" class="card-img-top" alt="MacBook Air">
+          <div class="card-body">
+            <h5 class="card-title">MacBook Air M2</h5>
+            <p>Apple M2 chip, 8GB RAM, 512GB SSD – Smoothest macOS experience.</p>
+            <p class="text-muted">₹93,900</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 laptop-card" data-brand="Apple" data-ram="16GB" data-storage="1TB" data-price="99900">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/macbook-pro.jpg" class="card-img-top" alt="MacBook Pro">
+          <div class="card-body">
+            <h5 class="card-title">MacBook Pro M2</h5>
+            <p>M2 chip, 16GB, 1TB SSD – Creator’s premium choice.</p>
+            <p class="text-muted">₹99,900</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 laptop-card" data-brand="ASUS" data-ram="8GB" data-storage="1TB" data-price="84990">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/asus-vivobook.jpg" class="card-img-top" alt="ASUS VivoBook">
+          <div class="card-body">
+            <h5 class="card-title">ASUS VivoBook Pro</h5>
+            <p>Ryzen 7, 8GB RAM, 1TB SSD – Sleek, powerful.</p>
+            <p class="text-muted">₹84,990</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 laptop-card" data-brand="ASUS" data-ram="16GB" data-storage="512GB" data-price="92900">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/asus-zenbook.jpg" class="card-img-top" alt="ASUS Zenbook">
+          <div class="card-body">
+            <h5 class="card-title">ASUS Zenbook OLED</h5>
+            <p>i7 13th Gen, 16GB RAM, 512GB SSD – OLED clarity & ultra-portable.</p>
+            <p class="text-muted">₹92,900</p>
+            <a href="#" class="btn btn-primary w-100" target="_blank">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-1">© 2025 DealHunt India</p>
+  <a href="privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const filterLaptops = () => {
+    const brand = document.getElementById('brandFilter').value;
+    const ram = document.getElementById('ramFilter').value;
+    const storage = document.getElementById('storageFilter').value;
+    const sort = document.getElementById('sortPrice').value;
+    const laptops = Array.from(document.querySelectorAll('.laptop-card'));
+
+    laptops.forEach(card => {
+      const matchBrand = brand === 'all' || card.dataset.brand === brand;
+      const matchRAM = ram === 'all' || card.dataset.ram === ram;
+      const matchStorage = storage === 'all' || card.dataset.storage === storage;
+      card.style.display = (matchBrand && matchRAM && matchStorage) ? 'block' : 'none';
+    });
+
+    if (sort !== 'default') {
+      laptops.sort((a, b) => {
+        const priceA = parseInt(a.dataset.price);
+        const priceB = parseInt(b.dataset.price);
+        return sort === 'asc' ? priceA - priceB : priceB - priceA;
+      });
+      const list = document.getElementById('laptopList');
+      laptops.forEach(card => list.appendChild(card));
+    }
+  };
+
+  document.querySelectorAll('select').forEach(select => {
+    select.addEventListener('change', filterLaptops);
+  });
+
+  // Initial trigger
+  filterLaptops();
+</script>
+</body>
+</html>
