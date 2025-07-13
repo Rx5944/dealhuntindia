@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Best Laptops Under ₹40,000 – DealHunt India</title>
+  <meta name="description" content="Explore laptops under ₹40,000 in India. Find budget options by Brand, RAM, and Storage with real-time price sorting.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <style>
+    .card-img-top {
+      height: 200px;
+      object-fit: contain;
+      padding: 15px;
+    }
+    .card {
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .price-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">DealHunt India</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="student-laptops.html">Student</a></li>
+        <li class="nav-item"><a class="nav-link" href="laptops-under-30000.html">Under ₹30K</a></li>
+        <li class="nav-item"><a class="nav-link active" href="laptops-under-40000.html">Under ₹40K</a></li>
+        <li class="nav-item"><a class="nav-link" href="laptops-under-50000.html">Under ₹50K</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="py-5 text-white text-center" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/budget-header.jpg') no-repeat center center/cover; height: 300px;">
+  <div class="container">
+    <h1 class="fw-bold">💸 Laptops Under ₹40,000</h1>
+    <p>Find the best budget laptops with filters by brand, RAM, storage & sort by price.</p>
+  </div>
+</header>
+
+<!-- Filters & Sorting -->
+<section class="bg-light py-4">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-3">
+        <select id="brandFilter" class="form-select">
+          <option value="">All Brands</option>
+          <option value="HP">HP</option>
+          <option value="Dell">Dell</option>
+          <option value="Lenovo">Lenovo</option>
+          <option value="MSI">MSI</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <select id="ramFilter" class="form-select">
+          <option value="">All RAM</option>
+          <option value="8GB">8GB</option>
+          <option value="16GB">16GB</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <select id="storageFilter" class="form-select">
+          <option value="">All Storage</option>
+          <option value="256GB SSD">256GB SSD</option>
+          <option value="512GB SSD">512GB SSD</option>
+          <option value="1TB HDD">1TB HDD</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <select id="priceSort" class="form-select">
+          <option value="">Sort by Price</option>
+          <option value="lowToHigh">Price: Low to High</option>
+          <option value="highToLow">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Laptop Cards -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4" id="laptopList">
+
+      <!-- Laptop Card 1 -->
+      <div class="col-md-4 col-lg-3 laptop-card" data-brand="HP" data-ram="16GB" data-storage="512GB SSD" data-price="37999">
+        <div class="card h-100 shadow-sm position-relative">
+          <!--<span class="badge bg-success price-badge">₹37,999</span>-->
+          <img src="assets/images/hp15s40.jpg" class="card-img-top" alt="HP Laptop" />
+          <div class="card-body">
+            <h5 class="card-title">HP 15</h5>
+            <p class="card-text small">AMD Ryzen 5 7520U, 16GB DDR5, 512GB SSD, 15.6" FHD, Windows 11</p>
+            <div class="d-grid gap-2">
+              <a href="#" class="btn btn-primary" target="_blank">Check price</a>
+              <a href="#" class="btn btn-primary" target="_blank">View on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Card 2 -->
+      <div class="col-md-4 col-lg-3 laptop-card" data-brand="Dell" data-ram="8GB" data-storage="512GB SSD" data-price="33999">
+        <div class="card h-100 shadow-sm position-relative">
+          <!--<span class="badge bg-success price-badge">₹33,999</span>-->
+          <img src="assets/images/dellinspiron15.jpg" class="card-img-top" alt="Dell Inspiron" />
+          <div class="card-body">
+            <h5 class="card-title">Dell Inspiron 15</h5>
+            <p class="card-text small">Intel Core i3-1305U, 8GB RAM, 512GB SSD, 15.6" FHD, Windows 11</p>
+            <div class="d-grid gap-2">
+              <a href="#" class="btn btn-primary" target="_blank">Check price</a>
+              <a href="#" class="btn btn-primary" target="_blank">View on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Card 3 -->
+      <div class="col-md-4 col-lg-3 laptop-card" data-brand="Lenovo" data-ram="8GB" data-storage="256GB SSD" data-price="34999">
+        <div class="card h-100 shadow-sm position-relative">
+          <!--<span class="badge bg-success price-badge">₹34,999</span>-->
+          <img src="assets/images/lenovov15.jpg" class="card-img-top" alt="Lenovo V15" />
+          <div class="card-body">
+            <h5 class="card-title">Lenovo V15</h5>
+            <p class="card-text small">AMD Ryzen 5 7520U, 8GB RAM, 256GB SSD, 15.6" FHD, Windows 11</p>
+            <div class="d-grid gap-2">
+              <a href="#" class="btn btn-primary" target="_blank">Check price</a>
+              <a href="#" class="btn btn-primary" target="_blank">View on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Card 4 -->
+      <div class="col-md-4 col-lg-3 laptop-card" data-brand="HP" data-ram="8GB" data-storage="512GB SSD" data-price="32999">
+        <div class="card h-100 shadow-sm position-relative">
+          <!--<span class="badge bg-success price-badge">₹32,999</span>-->
+          <img src="assets/images/hp14.jpg" class="card-img-top" alt="HP 14" />
+          <div class="card-body">
+            <h5 class="card-title">HP 14</h5>
+            <p class="card-text small">AMD Ryzen 5 7520U, 8GB RAM, 512GB SSD, 14" HD, Windows 11 Pro</p>
+            <div class="d-grid gap-2">
+              <a href="#" class="btn btn-primary" target="_blank">Check price</a>
+              <a href="#" class="btn btn-primary" target="_blank">View on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Card 5 -->
+      <div class="col-md-4 col-lg-3 laptop-card" data-brand="Dell" data-ram="8GB" data-storage="512GB SSD" data-price="35999">
+        <div class="card h-100 shadow-sm position-relative">
+          <!--<span class="badge bg-success price-badge">₹35,999</span>-->
+          <img src="assets/images/dellvostro3520.jpg" class="card-img-top" alt="Dell Vostro" />
+          <div class="card-body">
+            <h5 class="card-title">Dell Vostro 3520</h5>
+            <p class="card-text small">Intel Core i5-1235U, 8GB RAM, 512GB SSD, 15.6" FHD, Windows 11</p>
+            <div class="d-grid gap-2">
+              <a href="#" class="btn btn-primary" target="_blank">Check price</a>
+              <a href="#" class="btn btn-primary" target="_blank">View on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Card 6 -->
+      <div class="col-md-4 col-lg-3 laptop-card" data-brand="Lenovo" data-ram="16GB" data-storage="512GB SSD" data-price="39999">
+        <div class="card h-100 shadow-sm position-relative">
+          <!--<span class="badge bg-success price-badge">₹39,999</span>-->
+          <img src="assets/images/lenovaideapadslim340.jpg" class="card-img-top" alt="Lenovo IdeaPad" />
+          <div class="card-body">
+            <h5 class="card-title">Lenovo IdeaPad Slim 3</h5>
+            <p class="card-text small">AMD Ryzen 5 7520U, 16GB RAM, 512GB SSD, 15.6" FHD, Windows 11</p>
+            <div class="d-grid gap-2">
+              <a href="#" class="btn btn-primary" target="_blank">Check Price</a>
+              <a href="#" class="btn btn-primary" target="_blank">View on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Card 7 -->
+      <div class="col-md-4 col-lg-3 laptop-card" data-brand="MSI" data-ram="8GB" data-storage="512GB SSD" data-price="34990">
+        <div class="card h-100 shadow-sm position-relative">
+          <!--<span class="badge bg-success price-badge">₹34,990</span>-->
+          <img src="assets/images/msimodern14.jpg" class="card-img-top" alt="MSI Modern 14" />
+          <div class="card-body">
+            <h5 class="card-title">MSI Modern 14</h5>
+            <p class="card-text small">Intel Core i7-1255U, 8GB RAM, 512GB SSD, 14" FHD, Windows 11</p>
+            <div class="d-grid gap-2">
+              <a href="#" class="btn btn-primary" target="_blank">Check price</a>
+              <a href="#" class="btn btn-primary" target="_blank">View on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Card 8 -->
+      <div class="col-md-4 col-lg-3 laptop-card" data-brand="HP" data-ram="16GB" data-storage="1TB HDD" data-price="38990">
+        <div class="card h-100 shadow-sm position-relative">
+          <!--<span class="badge bg-success price-badge">₹38,990</span>-->
+          <img src="assets/images/hp255g8.jpg" class="card-img-top" alt="HP 255 G8" />
+          <div class="card-body">
+            <h5 class="card-title">HP 255 G8</h5>
+            <p class="card-text small">AMD Ryzen 5-3500U, 16GB RAM, 1TB HDD, 15.6" HD, DOS</p>
+            <div class="d-grid gap-2">
+              <a href="#" class="btn btn-primary" target="_blank">Check price</a>
+              <a href="#" class="btn btn-primary" target="_blank">View on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="container text-center my-4">
+  <style>
+  .custom-btn {
+    background-color: #f4c10f; /* DealHunt-style gold */
+    color: #000;
+    border: none;
+    padding: 30px 70px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: large;
+
+    
+  }
+
+  .custom-btn:hover {
+    background-color: #d4a40e;
+  }
+</style>
+
+<a href="#" target="_blank" class="custom-btn rounded mb-4">
+  See More
+</a>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>DealHunt India</h5>
+        <p>Your trusted source for tech product reviews and buying guides.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="privacy.html" class="text-white text-decoration-none me-3">Privacy Policy</a>
+        <a href="terms.html" class="text-white text-decoration-none">Terms of Service</a>
+        <p class="mt-2 mb-0">© 2025 DealHunt India. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const brandFilter = document.getElementById('brandFilter');
+    const ramFilter = document.getElementById('ramFilter');
+    const storageFilter = document.getElementById('storageFilter');
+    const priceSort = document.getElementById('priceSort');
+    const laptopList = document.getElementById('laptopList');
+    const laptops = Array.from(document.querySelectorAll('.laptop-card'));
+
+    // Filter function
+    function filterLaptops() {
+      const brandValue = brandFilter.value;
+      const ramValue = ramFilter.value;
+      const storageValue = storageFilter.value;
+
+      laptops.forEach(card => {
+        const cardBrand = card.dataset.brand;
+        const cardRam = card.dataset.ram;
+        const cardStorage = card.dataset.storage;
+
+        const brandMatch = !brandValue || cardBrand === brandValue;
+        const ramMatch = !ramValue || cardRam === ramValue;
+        const storageMatch = !storageValue || cardStorage === storageValue;
+
+        if (brandMatch && ramMatch && storageMatch) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Sort function
+    function sortLaptops() {
+      const sortValue = priceSort.value;
+      
+      if (!sortValue) return; // Do nothing if no sort option selected
+      
+      const sortedLaptops = [...laptops].sort((a, b) => {
+        const priceA = parseInt(a.dataset.price);
+        const priceB = parseInt(b.dataset.price);
+        
+        return sortValue === 'lowToHigh' ? priceA - priceB : priceB - priceA;
+      });
+
+      // Clear the container
+      while (laptopList.firstChild) {
+        laptopList.removeChild(laptopList.firstChild);
+      }
+
+      // Append sorted cards
+      sortedLaptops.forEach(card => {
+        if (card.style.display !== 'none') {
+          laptopList.appendChild(card);
+        }
+      });
+    }
+
+    // Event listeners
+    brandFilter.addEventListener('change', filterLaptops);
+    ramFilter.addEventListener('change', filterLaptops);
+    storageFilter.addEventListener('change', filterLaptops);
+    priceSort.addEventListener('change', function() {
+      filterLaptops();
+      sortLaptops();
+    });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
